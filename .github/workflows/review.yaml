@@ -9,5 +9,8 @@ jobs:
     ai-review:
         name: Review Terraform Changes
         uses: Sai9700128/AI_infra_reviewer/.github/workflows/review.yaml@main
+        permissions:
+            contents: read
+            pull-requests: write
         secrets:
             ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

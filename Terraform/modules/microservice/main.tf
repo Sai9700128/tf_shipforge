@@ -3,9 +3,9 @@
 # Creates per-service AWS resources
 # ==================================================
 
-resource "aws_ecr_repository" "this" {
+resource "aws_ecr_repository" "this2" {
   name                 = "taskflow-${var.name}"
-  image_tag_mutability = "MUTABLE"
+  image_tag_mutability = "IMMUTABLE"
   force_delete         = true
 
   image_scanning_configuration {
