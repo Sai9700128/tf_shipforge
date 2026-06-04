@@ -3,7 +3,7 @@
 # Creates per-service AWS resources
 # ==================================================
 
-resource "aws_ecr_repository" "this1" {
+resource "aws_ecr_repository" "this" {
   name                 = "taskflow-${var.name}"
   image_tag_mutability = "MUTABLE"
   force_delete         = true
