@@ -3,7 +3,7 @@ name: Infrastructure Review
 on:
     pull_request:
         paths:
-            - "**.tf"
+            - "Terraform/**.tf"
 
 jobs:
     ai-review:
